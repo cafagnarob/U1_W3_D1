@@ -277,6 +277,17 @@ console.log(nameFilm)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+const millFilm = []
+
+const fnMill = function (x) {
+  for (let i = 0; i < movies.length; i++) {
+    if (parseInt(x[i].Year) >= 2000) {
+      millFilm.push(x[i])
+    }
+  }
+}
+fnMill(movies)
+console.log(millFilm)
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
