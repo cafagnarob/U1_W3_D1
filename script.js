@@ -263,31 +263,40 @@ console.log(numFilm(movies))
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-const nameFilm = []
+// const nameFilm = []
 
-const fnTitoli = function (x) {
-  for (let i = 0; i < movies.length; i++) {
-    nameFilm.push(x[i].Title)
-  }
-}
-fnTitoli(movies)
-console.log(nameFilm)
+// const fnTitoli = function (x) {
+//   for (let i = 0; i < movies.length; i++) {
+//     nameFilm.push(x[i].Title)
+//   }
+// }
+// fnTitoli(movies)
+// console.log(nameFilm)
+
+const nameFilm = []
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+console.log("esercizio 12")
+// const millFilm = []
 
-const millFilm = []
+// const fnMill = function (x) {
+//   for (let i = 0; i < movies.length; i++) {
+//     if (parseInt(x[i].Year) >= 2000) {
+//       millFilm.push(x[i])
+//     }
+//   }
+// }
+// fnMill(movies)
+// console.log(millFilm)
 
-const fnMill = function (x) {
-  for (let i = 0; i < movies.length; i++) {
-    if (parseInt(x[i].Year) >= 2000) {
-      millFilm.push(x[i])
-    }
-  }
+const fnMill = function (arr) {
+  return arr.filter((movie) => parseInt(movie.Year) >= 2000)
 }
-fnMill(movies)
-console.log(millFilm)
+
+console.log(fnMill(movies))
+
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
