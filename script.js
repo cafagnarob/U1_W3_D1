@@ -278,7 +278,6 @@ const nameFilm = []
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
-console.log("esercizio 12")
 // const millFilm = []
 
 // const fnMill = function (x) {
@@ -291,8 +290,8 @@ console.log("esercizio 12")
 // fnMill(movies)
 // console.log(millFilm)
 
-const fnMill = function (arr) {
-  return arr.filter((movie) => parseInt(movie.Year) >= 2000)
+const fnMill = function (x) {
+  return x.filter((y) => parseInt(y.Year) >= 2000)
 }
 
 console.log(fnMill(movies))
